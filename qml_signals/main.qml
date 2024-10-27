@@ -1,9 +1,9 @@
-import QtQuick 2.0
+import QtQuick 2.0 
 import QtQuick.Controls 2.1
 import QtQuick.Window 2.1
 import QtQuick.Controls.Material 2.1
 
-import io.pyside.textproperties 1.0
+import io.pyside.textproperties 1.0 
 
 ApplicationWindow {
     id: page
@@ -12,7 +12,7 @@ ApplicationWindow {
     visible: true
 
     // This components comes from Python in the bridge.py file
-    Bridge {
+    Bridge { // qmllint disable
         id: bridge
         // This is the signal that will be emitted from Python, notice that the name here 
         // is not exactly the same with the "on" prepended to the camel case.
